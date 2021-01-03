@@ -134,6 +134,8 @@ add_histogram(tag, values, global_step=None, bins='tensorflow', walltime=None)
 
 <img src="C:%5CUsers%5C86182%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210103170107623.png" alt="image-20210103170107623" style="zoom:50%;" />
 
+对比loss图，发现conv1.weight_grad在7、8、9epoch 梯度小 是因为loss小，不是梯度消失
+
 #### fc3.weight_data
 
 <img src="C:%5CUsers%5C86182%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210103170241543.png" alt="image-20210103170241543" style="zoom:50%;" />
