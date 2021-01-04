@@ -59,15 +59,17 @@ normalize=False:![normalize_false](Week5%E3%80%90%E4%BB%BB%E5%8A%A12%E3%80%91%E7
 
 ![image-20210104162425489](Week5%E3%80%90%E4%BB%BB%E5%8A%A12%E3%80%91%E7%AC%AC%E4%BA%8C%E8%8A%82%EF%BC%9ATensorBoard%E4%BD%BF%E7%94%A8(%E4%BA%8C).assets/image-20210104162425489.png)
 
-
-
 <img src="Week5%E3%80%90%E4%BB%BB%E5%8A%A12%E3%80%91%E7%AC%AC%E4%BA%8C%E8%8A%82%EF%BC%9ATensorBoard%E4%BD%BF%E7%94%A8(%E4%BA%8C).assets/image-20210104162447434.png" alt="image-20210104162447434" style="zoom: 50%;" />
-
-![image-20210104162703551](Week5%E3%80%90%E4%BB%BB%E5%8A%A12%E3%80%91%E7%AC%AC%E4%BA%8C%E8%8A%82%EF%BC%9ATensorBoard%E4%BD%BF%E7%94%A8(%E4%BA%8C).assets/image-20210104162703551.png)
 
 <img src="C:%5CUsers%5C86182%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210104165640842.png" alt="image-20210104165640842" style="zoom:33%;" />
 
 <img src="C:%5CUsers%5C86182%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210104165014814.png" alt="image-20210104165014814" style="zoom:50%;" />
+
+![image-20210104162703551](Week5%E3%80%90%E4%BB%BB%E5%8A%A12%E3%80%91%E7%AC%AC%E4%BA%8C%E8%8A%82%EF%BC%9ATensorBoard%E4%BD%BF%E7%94%A8(%E4%BA%8C).assets/image-20210104162703551.png)
+
+
+
+<img src="C:%5CUsers%5C86182%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210104174721095.png" alt="image-20210104174721095" style="zoom:50%;" />
 
 **5.add_graph()**
 功能: 可视化模型计算图
