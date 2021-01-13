@@ -30,7 +30,27 @@ gpu1 = torch.device("cuda")
 linear.to(gpu1)
 ```
 
-torch.cuda常用方法
+#### 1.cup_use.py
+
+#### tensor to cuda
+
+![image-20210113105201530](Week7%E3%80%90%E4%BB%BB%E5%8A%A12%E3%80%91%E7%AC%AC%E4%B8%80%E8%8A%82%EF%BC%9AGPU%E7%9A%84%E4%BD%BF%E7%94%A8.assets/image-20210113105201530.png)
+
+<img src="C:%5CUsers%5C86182%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210113105300588.png" alt="image-20210113105300588" style="zoom: 50%;" />
+
+#### module to cuda
+
+<img src="C:%5CUsers%5C86182%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210113105528133.png" alt="image-20210113105528133" style="zoom: 60%;" />
+
+<img src="C:%5CUsers%5C86182%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210113105554331.png" alt="image-20210113105554331" style="zoom:50%;" />
+
+#### forward in cuda
+
+<img src="C:%5CUsers%5C86182%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210113105816316.png" alt="image-20210113105816316" style="zoom: 60%;" />
+
+
+
+#### torch.cuda常用方法
 
 1.torch.cuda.device_count(): 计算当前可见可用gpu数
 2.torch.cuda.get_device_name(): 获取gpu名称
@@ -40,6 +60,8 @@ torch.cuda常用方法
 推荐: os.environ.setdefault("CUDA_VISIBLE_DEVICES"，"2,3")
 
 ![image-20210113102042656](Week7%E3%80%90%E4%BB%BB%E5%8A%A12%E3%80%91%E7%AC%AC%E4%B8%80%E8%8A%82%EF%BC%9AGPU%E7%9A%84%E4%BD%BF%E7%94%A8.assets/image-20210113102042656.png)
+
+
 
 ![image-20210113102144869](Week7%E3%80%90%E4%BB%BB%E5%8A%A12%E3%80%91%E7%AC%AC%E4%B8%80%E8%8A%82%EF%BC%9AGPU%E7%9A%84%E4%BD%BF%E7%94%A8.assets/image-20210113102144869.png)
 
@@ -55,7 +77,22 @@ output_device: 结果输出设备
 torch.nn.DataParallel(module, device_ids=None, output_device=None, dim=0)
 ```
 
+#### 手动选择gpu
+
+<img src="C:%5CUsers%5C86182%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210113114011184.png" alt="image-20210113114011184" style="zoom:50%;" />
+
+#### 依内存情况自动选择主gpu
+
+![image-20210113114050602](Week7%E3%80%90%E4%BB%BB%E5%8A%A12%E3%80%91%E7%AC%AC%E4%B8%80%E8%8A%82%EF%BC%9AGPU%E7%9A%84%E4%BD%BF%E7%94%A8.assets/image-20210113114050602.png)
+
+![image-20210113114124173](Week7%E3%80%90%E4%BB%BB%E5%8A%A12%E3%80%91%E7%AC%AC%E4%B8%80%E8%8A%82%EF%BC%9AGPU%E7%9A%84%E4%BD%BF%E7%94%A8.assets/image-20210113114124173.png)
+
+![image-20210113114139264](Week7%E3%80%90%E4%BB%BB%E5%8A%A12%E3%80%91%E7%AC%AC%E4%B8%80%E8%8A%82%EF%BC%9AGPU%E7%9A%84%E4%BD%BF%E7%94%A8.assets/image-20210113114139264.png)
+
+
+
 #### 多gpu运算的分发并行机制
+
 batch size in forward:  8
 batch size in forward:  8
 model outputs.size: torch.Size([16，3])
